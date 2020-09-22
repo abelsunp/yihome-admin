@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h1>哈哈哈哈哈哈哈哈哈哈</h1>
+</body>
+
+<script>
+
+  axios.get('http://47.100.186.108:6898/admin/api/home/house/getHotCity', {
+    params: {
+
+    }
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  axios.get('http://47.100.186.108:6898/admin/api/home/house/getAllCity', {
+    params: {
+
+    }
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  axios.post('https://47.100.186.108:6898/admin/api/home/house/searchHouse', {
+    params: {
+      cityId: 196,
+      houseStatus: "2,3,4"
+    }
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+
+  axios.post('http://47.100.186.108:6898/admin/api/home/house/news', {
+    params: {}
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+</script>
+</html>
